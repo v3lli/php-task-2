@@ -14,3 +14,5 @@ there is a link to my dashboard on the index page if the user is actually logged
 if not this link wont show.
 
 the index page really just gives you notifications dont expect much there..
+
+whatever you do: please ignore the index.html page i used it for template
