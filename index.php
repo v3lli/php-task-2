@@ -1,5 +1,6 @@
 <?php include_once('lib/header.php');?>
 <?php
+session_start();
 if(isset($_GET["message"]))
 {
     if($_GET["message"] == "logged_in"){
