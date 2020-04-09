@@ -12,13 +12,13 @@ if(empty($email) ||empty($pword)){
         exit();
     }else{
         $users = scandir("../db/users");
-        var_dump($users);
+        //var_dump($users);
         $totalusers = count($users);
         for($i=2;$i < $totalusers;$i++){
             if($email.".json" == $users[$i]){
                 $userobj = file_get_contents("../db/users/".$users[$i]);
                 $userdeets = json_decode($userobj);
-                echo"got here";
+                //echo"got here";
                 if($pword == $userdeets->password){
                     //logged in
                     $_SESSION["user"] = $userdeets->first_name;
