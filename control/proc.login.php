@@ -18,11 +18,14 @@ if(empty($email) ||empty($pword)){
             if($email.".json" == $users[$i]){
                 $userobj = file_get_contents("../db/users/".$users[$i]);
                 $userdeets = json_decode($userobj);
-                //echo"got here";
+                
                 if($pword == $userdeets->password){
                     //logged in
+                    echo"got here";
                     $_SESSION["user"] = $userdeets->first_name;
                     header("Location:../index.php?message=logged_in");
+                }else{
+                    exit();
                 }
 
             }else{
