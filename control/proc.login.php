@@ -22,7 +22,13 @@ if(empty($email) ||empty($pword)){
                 if($pword == $pwordchk){
                     //logged in
                     echo"got here";
-                    $_SESSION["user"] = $userdeets->first_name;
+                    $_SESSION["userf"] = $userdeets->first_name;
+                    $_SESSION["userl"] = $userdeets->first_name;
+                    $_SESSION["des"] = $userdeets->first_name;
+                    $_SESSION["gender"] = $userdeets->first_name;
+                    
+
+
                     header("Location:../index.php?message=logged_in");
                 }else{
                     exit();

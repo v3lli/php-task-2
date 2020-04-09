@@ -5,6 +5,7 @@
     $lname = $_POST["lname"];
     $email = $_POST["email"];
     $des = $_POST["des"];
+    $gen = $_POST["gen"];
     $pword = $_POST["pword"];
     $pword2 = $_POST["pword2"];
     $uname = $_POST["uname"];
@@ -49,6 +50,7 @@
         "mail"=>$email,
         "passsword"=>$pword,
         "designation"=>$des,
+        "gender"=>$gen,
         "username"=>$uname
     ];
     $_SESSION["usr"] = $uname;
