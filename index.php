@@ -15,10 +15,7 @@ if(isset($_GET["message"]))
     }
 }
 if(isset($_SESSION["userf"]))
-{?>
-    <a href="dashboard.php">Go to dashboard </a>|
-    <a href="control/proc.logout.php">Log out</a>|
-    
-<?php
-}
-include_once('lib/footer.php');?>
+{
+    include_once('lib/footerout.php');
+}else{
+include_once('lib/footer.php');}?>
