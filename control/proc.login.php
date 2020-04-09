@@ -23,10 +23,10 @@ if(empty($email) ||empty($pword)){
                     //logged in
                     echo"got here";
                     $_SESSION["userf"] = $userdeets->first_name;
-                    $_SESSION["userl"] = $userdeets->first_name;
-                    $_SESSION["des"] = $userdeets->first_name;
-                    $_SESSION["gender"] = $userdeets->first_name;
-                    
+                    $_SESSION["userl"] = $userdeets->last_name;
+                    $_SESSION["des"] = $userdeets->designation;
+                    $_SESSION["gender"] = $userdeets->gender;
+
 
 
                     header("Location:../index.php?message=logged_in");
