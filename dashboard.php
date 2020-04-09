@@ -8,5 +8,4 @@ session_start();?>
 <p>designation: <?php echo $_SESSION['des']?></p>
 <p>gender: <?php echo $_SESSION['gender']?></p>
 
-<a href="control/proc.logout.php">Log out</a>
-<?php include_once('lib/footer.php');?>
+<?php include_once('lib/footerout.php');?>
